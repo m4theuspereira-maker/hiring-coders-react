@@ -1,11 +1,20 @@
 import styled from 'styled-components'
 
-export const CONTAINER = styled.div`
+
+export const HOME_CONTAINER = styled.div`    
+display: flex;
+flex-direction:column;
+align-items: center; 
+justify-content: center;
+height: 100vh; 
+width: 100vw;
+`
+
+export const CONTENT = styled.div`
     width: 100vw;
-    height: 100vh; 
     display: flex;
     align-items: center; 
-    justify-content: center
+    justify-content: center;
 `
 
 export const INPUT = styled.input`
@@ -28,3 +37,13 @@ background: #000;
 color: #fff;
 border-radius: 0 .25rem .25rem 0; 
 `
+
+export const ERROR_MSG = styled.span`
+display:block;
+font-size:0.65rem;
+color: red; 
+font-weight: 600;
+margin-top: 1rem;
+
+`
+
